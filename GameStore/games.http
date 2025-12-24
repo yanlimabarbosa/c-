@@ -1,3 +1,38 @@
 @baseUrl = http://localhost:5285
+@gameId = 14
 
-GET {{baseUrl}}
+# Get all games
+GET {{baseUrl}}/games
+###
+
+# Get game by ID
+GET {{baseUrl}}/games/{{gameId}}
+###
+
+# Get game by ID
+POST {{baseUrl}}/games
+Content-Type: application/json
+
+{
+  "name": "Updated Game Title",
+  "genre": "Adventure",
+  "price": 39.99,
+  "releaseDate": "2023-05-15"
+}
+###
+
+# Update game by ID
+PUT {{baseUrl}}/games/{{gameId}}
+Content-Type: application/json
+
+{
+  "name": "Updated Title",
+  "genre": "Adventure",
+  "price": 39.99,
+  "releaseDate": "2023-05-15"
+}
+###
+
+# Delete game by ID
+DELETE {{baseUrl}}/games/{{gameId}}
+

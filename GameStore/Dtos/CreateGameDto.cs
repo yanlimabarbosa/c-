@@ -1,8 +1,7 @@
 namespace GameStore.Dtos;
 
-public record class GameDto
+public record class CreateGameDto
 (
-    int Id, 
     string Name, 
     string Genre, 
     decimal Price,
