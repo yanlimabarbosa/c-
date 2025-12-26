@@ -9,7 +9,7 @@ GET {{baseUrl}}/games
 GET {{baseUrl}}/games/{{gameId}}
 ###
 
-# Get game by ID
+# Create game
 POST {{baseUrl}}/games
 Content-Type: application/json
 
