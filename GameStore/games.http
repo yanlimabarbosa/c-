@@ -1,5 +1,5 @@
 @baseUrl = http://localhost:5285
-@gameId = 14
+@gameId = 1
 
 # Get all games
 GET {{baseUrl}}/games
